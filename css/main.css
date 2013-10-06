@@ -105,10 +105,11 @@ header {
   font-size:5em;
   margin-top:8%;
   color:#444;
+  font-family:"Lora", "Georgia", serif;
 }
 
 #controller {
-  font-size:1.5em;
+  font-size:1.25em;
   font-family:"Arial";
   color:#ccc;
   cursor:pointer;
@@ -130,11 +131,12 @@ header {
 }
 
 #about {
-  max-width:80%;
+  max-width:70%;
   line-height:1.75em;
   margin:6% auto 0 auto;
   font-size:1.2em;
   color:#444;
+  font-family:"Lora";
 }
 
 #conclusion {
