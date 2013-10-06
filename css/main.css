@@ -112,6 +112,7 @@ header {
   font-family:"Arial";
   color:#ccc;
   cursor:pointer;
+  font-style:italic;
 }
 
 #pause {
@@ -139,6 +140,10 @@ header {
 #conclusion {
   margin-top:6%;
   text-align:center;
+}
+
+#description{
+  text-shadow:2px 2px 4px #ccc;
 }
 
 
