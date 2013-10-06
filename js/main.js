@@ -39,8 +39,12 @@ $(document).ready(function(){
 
   var rotateDay = function(){
     if(paused == false){
+      var description = $('#description');
       var id = Math.floor(Math.random()*modifiers.length)+1;
-      $('#description').html(modifiers[id]);
+      // color generation from http://www.paulirish.com/2009/random-hex-color-code-snippets/
+      var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+      description.html(modifiers[id]);
+      description.css('color', color);
       var changeModifier = setTimeout(rotateDay,2000);
     }
   }
