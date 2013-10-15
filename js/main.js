@@ -43,7 +43,7 @@ $(document).ready(function(){
       description.html(modifiers[id]);
       description.css('color', color);
       var changeModifier = setTimeout(rotateDay,2000);
-    }
+    }ß
   }
 
   $('#pause').on('click', function(){
@@ -53,6 +53,7 @@ $(document).ready(function(){
       setTimeout(rotateDay, 500);
     }
     else{
+      clearTimeout(rotateDay);
       $('#pause').html('Resume');
     }
   })
