@@ -1,40 +1,37 @@
 $(document).ready(function(){
   var paused = false;
   var modifiers = [ 
-    'a nice',
-    'an awesome',
-    'a great',
-    'a stellar',
-    'a good',
-    'an amazing',
-    'a fulfilling',
-    'a rewarding',
-    'a fun',
-    'a magical',
-    'a wonderful',
-    'a peaceful',
-    'an exciting',
-    'a marvelous',
-    'a positive',
-    'a rewarding',
-    'an epic',
-    'a trouble-free',
-    'a worry-free',
-    'a productive',
-    'a fantastic',
-    'an enlightening',
-    'the perfect',
-    'a prolific',
-    'an above average',
-    'a meaningful',
-    'a relaxing',
-    'a solid',
-    'a magical',
-    'a stress-free',
-    'a beautiful',
-    'a fabulous',
-    'a cheerful',
-    'a bright'
+    ' nice',
+    ' great',
+    ' stellar',
+    ' good',
+    ' fulfilling',
+    ' rewarding',
+    ' fun',
+    ' magical',
+    ' wonderful',
+    ' peaceful',
+    ' marvelous',
+    ' positive',
+    ' rewarding',
+    ' trouble-free',
+    ' worry-free',
+    ' productive',
+    ' fantastic',
+    ' perfect',
+    ' prolific',
+    ' meaningful',
+    ' relaxing',
+    ' solid',
+    ' magical',
+    ' stress-free',
+    ' beautiful',
+    ' fabulous',
+    ' cheerful',
+    ' bright',
+    ' sublime',
+    ' terrific',
+    ' phenomenal'
   ]
 
   var rotateDay = function(){
@@ -46,7 +43,7 @@ $(document).ready(function(){
       description.html(modifiers[id]);
       description.css('color', color);
       var changeModifier = setTimeout(rotateDay,2000);
-    }
+    }ß
   }
 
   $('#pause').on('click', function(){
@@ -56,6 +53,7 @@ $(document).ready(function(){
       setTimeout(rotateDay, 500);
     }
     else{
+      clearTimeout(rotateDay);
       $('#pause').html('Resume');
     }
   })
